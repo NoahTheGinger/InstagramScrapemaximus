@@ -162,8 +162,8 @@ async def scrape_and_create_gallery(username):
 
 def main():
     if len(sys.argv) < 2:
-        print("Usage: python instagram_toolkit.py <username1> [username2] [username3] ...")
-        print("Example: python instagram_toolkit.py instagram")
+        print("Usage: python InstagramScrapemaximus.py <username1> [username2] [username3] ...")
+        print("Example: python InstagramScrapemaximus.py instagram")
         return
     
     usernames = sys.argv[1:]

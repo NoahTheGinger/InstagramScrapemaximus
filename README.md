@@ -1,4 +1,4 @@
-# Instagram Scraping Toolkit
+# Instagram Scraping Toolkit: Scrapemaximus
 
 > **A single-file helper for hobby-scale Instagram research**  
 > *No browser automation, no proxies, minimal dependencies.*
@@ -18,7 +18,7 @@ python -m venv .venv && source .venv/bin/activate   # Windows ⇒ .venv\Scripts\
 pip install httpx                                    # only runtime dependency
 
 # Run the script with one or more Instagram usernames
-python instagram_toolkit.py username1 username2
+python InstagramScrapemaximus.py username1 username2
 ```
 
 ---
@@ -55,7 +55,7 @@ Default 1–1.5 s delay ⇒ ~3 k rows/hour, well below IG's soft limits. Adjust 
 
 * Add the **following** list: change `QUERY_HASH` to `d04b0a864b4b54837c0d870b0e77e076` and call a `get_following()` helper (implement similar to fetch_followers)
 * Enrich each row with the follower's **bio** or **location** by querying `/api/v1/users/web_profile_info/` per username  
-* Process multiple usernames in a single run by passing them as space-separated arguments: `python instagram_toolkit.py user1 user2 user3`
+* Process multiple usernames in a single run by passing them as space-separated arguments: `python InstagramScrapemaximus.py user1 user2 user3`
 
 ---
 
